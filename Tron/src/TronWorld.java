@@ -5,6 +5,8 @@ import tester.*; //tester library
 import javalib.funworld.*; //world class
 import javalib.worldimages.*; //worldImages class
 
+// David, you are a legitimate piece of shit
+
 public class TronWorld extends World{
   Grid grid;
   
