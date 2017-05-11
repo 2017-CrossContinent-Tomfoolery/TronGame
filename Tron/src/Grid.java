@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.awt.Color; 
 import java.util.Random;
 
-import tester.*; //tester library
+//import tester.*; //tester library
 import javalib.funworld.*; //world class
 import javalib.worldimages.*; //worldImages class
 
@@ -51,21 +51,15 @@ class Utils {
   ArrayList<ArrayList<Integer>> makeGridArray(int size, Player player) {
 //    System.out.println("1");
     
-    
     ArrayList<ArrayList<Integer>> gridArray = new ArrayList<ArrayList<Integer>>(size); //2DArray with random ints ranging from 0 to 2 
     //populating the gridArray with the array aList of random ints ranging from 0 to 2;
     for(int i = size; 0 < i; i--) {
       ArrayList<Integer> gridRow = new ArrayList<Integer>(size);
-      for(int j = size; 0 < j; j--) {
+        for(int j = size; 0 < j; j--) {
           int randomNum = (int)Math.round(Math.random() * 2);
           gridRow.add(0);
-      }
-      
-      for(int k = size; 0 < k; k--) {
-        if((k == player.getPositionX()) && (i == player.getPostionY())) {
-          gridRow.set(k, 1);
         }
-      }
+      
 //      System.out.println("" + gridRow);
       gridArray.add(gridRow);
     }

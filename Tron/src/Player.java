@@ -1,9 +1,9 @@
-import java.util.ArrayList;  
+import java.util.ArrayList;   
 import java.util.Arrays;
 import java.awt.Color; 
 import java.util.Random;
 
-import tester.*; //tester library
+//import tester.*; //tester library
 import javalib.funworld.*; //world class
 import javalib.worldimages.*; //worldImages class
 
