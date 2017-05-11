@@ -1,4 +1,4 @@
-import java.awt.Color;  
+import java.awt.Color;   
 import java.util.Random;
 
 import tester.*; //tester library
@@ -17,13 +17,18 @@ public class TronWorld extends World{
     return this.grid.drawGrid();
   }
   
+  public World onKeyEvent(String ke) {
+    return this;
+  }
+  
   
 }
 
 class ExamplesTron {
   Utils u = new Utils();
   int size = 400;
-  Grid grid = new Grid(size, 10, u.makeGridArray(size));
+  Player p = new Player(new Posn(1, 1), 10);
+  Grid grid = new Grid(size, 20, u.makeGridArray(size, p), p);
   World tron = new TronWorld(grid);
   
   boolean testTronWorld(Tester t) {
